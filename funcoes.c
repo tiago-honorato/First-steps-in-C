@@ -11,12 +11,16 @@ int main() {
  	//declarações das variáveis
 	int result, valor;
 	
+	printf("Programa em C\n");
+	
 	//chamada da função somar();
 	result = somar(10, 10);
 	
-	printf("Programa em C\n");
-	
 	printf("%d", result);
+	
+	printf("%d", somar(5, 35));
+	
+	printf("%d", somar(50, 50));
 	
 	valor = converterParaDolar(10);
 	
@@ -33,6 +37,10 @@ int main() {
 //definição da função
 int somar(int a, int b){
 	
+	static int contadorDeChamadas = 0;
+	contadorDeChamadas++;
+	printf("\nA função somar foi chamada: %d vezes\n", contadorDeChamadas);
+	
 	//retorno da função
 	return a+b;
 	
@@ -45,4 +53,3 @@ int converterParaDolar(int valor){
 	return valor/5;
 	
 }
-
