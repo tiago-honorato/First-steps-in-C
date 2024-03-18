@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 int main() {
-	
-    // Imprime os números de 1 a 5
     
     for (int i = 1; i <= 5; i++) {
     	
@@ -10,11 +8,11 @@ int main() {
         
     }
     
-    int contadorWhile = 0;
+    int contadorWhile = 1;
     
     while (contadorWhile <= 5) {
     	
-        printf("%d\n", contador);
+        printf("estrutura WHILE: %d\n", contadorWhile);
         
         contadorWhile++;
         
@@ -24,9 +22,9 @@ int main() {
     
     do {
     	
-        printf("%d\n", contador);
+        printf("estrutura DO-WHILE: %d\n", contadorDoWhile);
         
-        contador++;
+        contadorDoWhile++;
         
     } while (contadorDoWhile <= 5);
     
