@@ -8,7 +8,7 @@ int converterParaDolar(int valor);
 //função principal
 int main() {
 	
-	//declarações das variáveis
+ 	//declarações das variáveis
 	int result, valor;
 	//chamada da função somar();
 	result = somar(10, 10);
@@ -21,7 +21,11 @@ int main() {
 	
 	printf("\n%d", valor);
 	
-	//retorno da função
+	/*
+ 	o return 0 na função principal(main) determinar se o programa foi executado com sucesso ou não.
+  	Um valor de retorno de 0 normalmente indica que o programa foi concluído sem erros,
+   	enquanto valores diferentes de zero indicam que ocorreu algum tipo de erro durante a execução do programa.
+ 	*/
 	return 0;
 }
 
