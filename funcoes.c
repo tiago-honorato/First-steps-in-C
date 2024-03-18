@@ -10,6 +10,7 @@ int main() {
 	
  	//declarações das variáveis
 	int result, valor;
+	
 	//chamada da função somar();
 	result = somar(10, 10);
 	
@@ -44,5 +45,4 @@ int converterParaDolar(int valor){
 	return valor/5;
 	
 }
-
 
